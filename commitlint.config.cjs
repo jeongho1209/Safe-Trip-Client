@@ -26,8 +26,8 @@ module.exports = {
                         'delete',
                     ]);
                     return [
-                        types.has(header.split(' :: ')[0]),
-                        `${header.split(' :: ')[0]}은 type으로 사용할 수 없습니다.`,
+                        types.has(header.split(':')[0]),
+                        `${header.split(':')[0]}은 type으로 사용할 수 없습니다.`,
                     ];
                 },
             },
