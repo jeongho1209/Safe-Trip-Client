@@ -62,9 +62,13 @@ module.exports = {
     "@typescript-eslint/naming-convention": [
       // 코드 전반 네이밍 컨벤션
       "error",
-      { format: ["PascalCase"], selector: "variable", modifiers: ["exported"] },
       {
-        format: ["camelCase"],
+        format: ["PascalCase", "camelCase"],
+        selector: "variable",
+        modifiers: ["exported"],
+      },
+      {
+        format: ["camelCase", "snake_case"],
         selector: "variable",
         leadingUnderscore: "allow",
       },
@@ -73,7 +77,11 @@ module.exports = {
         selector: "parameter",
         leadingUnderscore: "allow",
       },
-      { format: ["PascalCase"], selector: "function", modifiers: ["exported"] },
+      {
+        format: ["PascalCase", "camelCase"],
+        selector: "function",
+        modifiers: ["exported"],
+      },
       { format: ["camelCase"], selector: "function" },
       { format: ["PascalCase"], selector: "interface" },
       { format: ["PascalCase"], selector: "typeAlias" },
