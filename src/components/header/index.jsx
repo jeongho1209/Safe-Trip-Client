@@ -22,9 +22,11 @@ export const MyInfo = styled.text`
 export const Wrapper = styled.header`
     width: 100%;
     height: 82px;
+    position: fixed;
     display: flex;
     align-items: center;
     gap: 80px;
+    background: white;
 `;
 
 const Header = () => {
