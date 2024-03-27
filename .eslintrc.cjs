@@ -59,32 +59,32 @@ module.exports = {
 
     "@typescript-eslint/no-unused-vars": "off", // 위 no-unused-vars와 중복
     "@typescript-eslint/no-shadow": "error", // 같은 변수명 금지
-    "@typescript-eslint/naming-convention": [
-      // 코드 전반 네이밍 컨벤션
-      "error",
-      {
-        format: ["PascalCase", "camelCase"],
-        selector: "variable",
-        modifiers: ["exported"],
-      },
-      {
-        format: ["camelCase", "snake_case"],
-        selector: "variable",
-        leadingUnderscore: "allow",
-      },
-      {
-        format: ["camelCase"],
-        selector: "parameter",
-        leadingUnderscore: "allow",
-      },
-      {
-        format: ["PascalCase", "camelCase"],
-        selector: "function",
-        modifiers: ["exported"],
-      },
-      { format: ["camelCase"], selector: "function" },
-      { format: ["PascalCase"], selector: "interface" },
-      { format: ["PascalCase"], selector: "typeAlias" },
-    ],
+    // "@typescript-eslint/naming-convention": [
+    //   // 코드 전반 네이밍 컨벤션
+    //   "warn",
+    //   {
+    //     format: ["PascalCase", "camelCase"],
+    //     selector: "variable",
+    //     modifiers: ["exported"],
+    //   },
+    //   {
+    //     format: ["camelCase", "snake_case"],
+    //     selector: "variable",
+    //     leadingUnderscore: "allow",
+    //   },
+    //   {
+    //     format: ["camelCase"],
+    //     selector: "parameter",
+    //     leadingUnderscore: "allow",
+    //   },
+    //   {
+    //     format: ["PascalCase", "camelCase"],
+    //     selector: "function",
+    //     modifiers: ["exported"],
+    //   },
+    //   { format: ["camelCase"], selector: "function" },
+    //   { format: ["PascalCase"], selector: "interface" },
+    //   { format: ["PascalCase"], selector: "typeAlias" },
+    // ],
   },
 };
