@@ -1,9 +1,9 @@
 import styled from 'styled-components';
 import png from '../../../assets/image.png';
 
-export const Image = styled.img`
-    width: 100vw;
-    height: 100vh;
+const Image = styled.img`
+    position: absolute;
+    z-index: -1;
 `;
 
 export const MainImage = () => {
