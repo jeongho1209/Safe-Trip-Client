@@ -1,28 +1,17 @@
-import Header from './components/header/index.jsx';
-import { MainImage } from './components/main/image/mainImage.jsx';
 import './reset.css';
-import { MainText } from './components/main/text/index.jsx';
-import styled from 'styled-components';
+import { BrowserRouter, Route, Routes } from 'react-router-dom';
+import { Main } from './pages/main.jsx';
 
 function App() {
     return (
         <>
-            <Header></Header>
-            <Wrapper>
-                <MainImage></MainImage>
-                <MainText></MainText>
-            </Wrapper>
+            <BrowserRouter>
+                <Routes>
+                    <Route path="/main" element={<Main />} />
+                </Routes>
+            </BrowserRouter>
         </>
     );
 }
 
 export default App;
-
-const Wrapper = styled.div`
-    position: relative;
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-`;
