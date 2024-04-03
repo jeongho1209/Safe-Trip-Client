@@ -3,7 +3,7 @@ import png from '../../../assets/image.png';
 
 const Image = styled.img`
     position: absolute;
-    z-index: -1;
+    z-index: -100;
 `;
 
 export const MainImage = () => {
