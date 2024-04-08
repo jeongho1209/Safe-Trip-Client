@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import Search from '../search/index.jsx';
 
 const Text = styled.text`
     font-size: 50px;
@@ -24,6 +25,7 @@ export const TravelInfoText = () => {
             <Background>
                 <Wrapper>
                     <Text>여행지에 대한 정보를 공유해보세요!</Text>
+                    <Search></Search>
                 </Wrapper>
             </Background>
         </>
