@@ -31,7 +31,7 @@ jobs:
       - name: Set Yarn Version
         id: set-version
         run: |
-          yarn set version 3.6.0
+          yarn set version 4.1.0
           echo "YARN_VERSION=$(yarn -v)" >> $GITHUB_OUTPUT
 
       - name: Yarn Cache - PnP

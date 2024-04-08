@@ -56,5 +56,5 @@
         "stylelint-order": "^6.0.4",
         "vite": "^5.1.6"
     },
-    "packageManager": "yarn@3.6.0"
+    "packageManager": "yarn@4.1.0"
 }
