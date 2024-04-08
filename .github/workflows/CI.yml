@@ -1,4 +1,4 @@
-name: Today-Where-CI
+name: Safe-Trip-CI
 
 on:
   push:
