@@ -69,7 +69,7 @@ export default function SignIn() {
                         </Button>
                         <Grid container>
                             <Grid item>
-                                <Link href="#" variant="body2">
+                                <Link href="/signup" variant="body2">
                                     {'계정이 존재하지 않는다면? 회원가입하기'}
                                 </Link>
                             </Grid>

@@ -52,7 +52,7 @@ export default function SignUp() {
                     </Button>
                     <Grid container justifyContent="flex-end">
                         <Grid item>
-                            <Link href="#" variant="body2">
+                            <Link href="/signin" variant="body2">
                                 이미 계정이 존재한다면? 로그인하기
                             </Link>
                         </Grid>
