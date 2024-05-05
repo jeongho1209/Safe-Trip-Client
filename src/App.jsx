@@ -4,6 +4,7 @@ import { Main } from './pages/main.jsx';
 import { TravelInfo } from './pages/travelInfo.jsx';
 import SignUp from './pages/signUp.jsx';
 import SignIn from './pages/signIn.jsx';
+import { Review } from './pages/review.jsx';
 
 function App() {
     return (
@@ -12,6 +13,7 @@ function App() {
                 <Routes>
                     <Route path="/main" element={<Main />} />
                     <Route path="/travelInfo" element={<TravelInfo />} />
+                    <Route path="/review" element={<Review />} />
                     <Route path="/signUp" element={<SignUp />} />
                     <Route path="/signIn" element={<SignIn />} />
                 </Routes>
