@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Search from '../search/index.jsx';
+import Search from '../../search/index.jsx';
 
 const Text = styled.text`
     font-size: 50px;
@@ -19,12 +19,12 @@ const Background = styled.div`
     background-color: bisque;
 `;
 
-export const TravelInfoText = () => {
+export const ReviewText = () => {
     return (
         <>
             <Background>
                 <Wrapper>
-                    <Text>여행지에 대한 정보를 공유해보세요!</Text>
+                    <Text>리뷰를 작성하고 다른 여행자에게 도움을 주세요!</Text>
                     <Search></Search>
                 </Wrapper>
             </Background>
