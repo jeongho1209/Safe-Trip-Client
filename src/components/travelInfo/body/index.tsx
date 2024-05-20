@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Search from '../../search/index.jsx';
+import Search from '../../search/index.tsx';
 
 const Text = styled.text`
     font-size: 50px;

@@ -1,6 +1,6 @@
-import Header from '../components/header/index.jsx';
-import { MainImage } from '../components/main/image/mainImage.jsx';
-import { MainText } from '../components/main/text/index.jsx';
+import Header from '@components/header/index.tsx';
+import { MainImage } from '@components/main/image/mainImage.tsx';
+import { MainText } from '@components/main/text/index.tsx';
 import styled from 'styled-components';
 
 export const Main = () => {

@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { useState } from 'react';
+import { ChangeEvent, KeyboardEvent, useState } from 'react';
 
 const SearchBox = styled.input`
     font-size: x-large;
@@ -19,11 +19,11 @@ const SearchBox = styled.input`
 const Search = () => {
     const [text, setText] = useState('');
 
-    const onChangeText = (e) => {
+    const onChangeText = (e: ChangeEvent<HTMLInputElement>) => {
         setText(e.target.value);
     };
 
-    const handleEnter = (e) => {
+    const handleEnter = (e: KeyboardEvent<HTMLInputElement>) => {
         if (e.key === 'Enter') {
             setText('');
         }

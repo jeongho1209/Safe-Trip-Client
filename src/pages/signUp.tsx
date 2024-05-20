@@ -1,7 +1,8 @@
 import { Avatar, Box, Button, Container, CssBaseline, Grid, Link, TextField, Typography } from '@mui/material';
+import { FormEvent } from 'react';
 
 export default function SignUp() {
-    const handleSubmit = (event) => {
+    const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
     };
 
@@ -48,12 +49,12 @@ export default function SignUp() {
                         </Grid>
                     </Grid>
                     <Button type="submit" fullWidth variant="contained" sx={{ mt: 3, mb: 2 }}>
-                        회원가입하기
+                        회원가입
                     </Button>
                     <Grid container justifyContent="flex-end">
                         <Grid item>
-                            <Link href="/signin" variant="body2">
-                                이미 계정이 존재한다면? 로그인하기
+                            <Link href="/src/pages/signIn" variant="body2">
+                                로그인하기
                             </Link>
                         </Grid>
                     </Grid>

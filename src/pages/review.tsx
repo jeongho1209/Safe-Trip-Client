@@ -1,5 +1,5 @@
-import { ReviewText } from '../components/review/body/index.jsx';
-import Header from '../components/header/index.jsx';
+import { ReviewText } from '@components/review/body/index.tsx';
+import Header from '@components/header/index.tsx';
 
 export const Review = () => {
     return (

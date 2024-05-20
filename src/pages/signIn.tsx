@@ -1,4 +1,3 @@
-import * as React from 'react';
 import Avatar from '@mui/material/Avatar';
 import Button from '@mui/material/Button';
 import CssBaseline from '@mui/material/CssBaseline';
@@ -8,9 +7,10 @@ import Paper from '@mui/material/Paper';
 import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
+import { FormEvent } from 'react';
 
 export default function SignIn() {
-    const handleSubmit = (event) => {
+    const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
     };
 
@@ -69,8 +69,8 @@ export default function SignIn() {
                         </Button>
                         <Grid container>
                             <Grid item>
-                                <Link href="/signup" variant="body2">
-                                    {'계정이 존재하지 않는다면? 회원가입하기'}
+                                <Link href="/src/pages/signUp" variant="body2">
+                                    회원가입하기
                                 </Link>
                             </Grid>
                         </Grid>
