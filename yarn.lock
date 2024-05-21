@@ -1362,15 +1362,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/match-sorter-utils@npm:^8.7.0":
-  version: 8.11.8
-  resolution: "@tanstack/match-sorter-utils@npm:8.11.8"
-  dependencies:
-    remove-accents: "npm:0.4.2"
-  checksum: 10c0/b8d6353feebbb2f640e1c9f88942feec71db643b8a00b8cbf50ee54868c42c3f6a90aaa6e47a641b214c053f3afbfbec118c9aa4b57fa1bd50bbb079716b66fc
-  languageName: node
-  linkType: hard
-
 "@tanstack/query-core@npm:5.28.6":
   version: 5.28.6
   resolution: "@tanstack/query-core@npm:5.28.6"
@@ -1378,18 +1369,22 @@ __metadata:
   languageName: node
   linkType: hard
 
-"@tanstack/react-query-devtools@npm:4.29.5":
-  version: 4.29.5
-  resolution: "@tanstack/react-query-devtools@npm:4.29.5"
+"@tanstack/query-devtools@npm:5.37.1":
+  version: 5.37.1
+  resolution: "@tanstack/query-devtools@npm:5.37.1"
+  checksum: 10c0/c52c320972e2b430da69f18295ddb2c62ea5c3c1b83481b225be799f7e955e32782d68871bddc141acc468cf4d7ad5dcdd2c88ff3edc90021d28e57252dfab8b
+  languageName: node
+  linkType: hard
+
+"@tanstack/react-query-devtools@npm:^5.37.1":
+  version: 5.37.1
+  resolution: "@tanstack/react-query-devtools@npm:5.37.1"
   dependencies:
-    "@tanstack/match-sorter-utils": "npm:^8.7.0"
-    superjson: "npm:^1.10.0"
-    use-sync-external-store: "npm:^1.2.0"
+    "@tanstack/query-devtools": "npm:5.37.1"
   peerDependencies:
-    "@tanstack/react-query": 4.29.5
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-    react-dom: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/abf8840404b88fab719f78ccf24cea5553824d40c88a5db402c908360ade553eefd7da22a5acb17108321e2d3163eb7ef9d541d2e9e1d40b4e16e4fe856f28fd
+    "@tanstack/react-query": ^5.37.1
+    react: ^18.0.0
+  checksum: 10c0/e833b6a84e5f35aad8460d408ff8f92ca5d6b655f5dfdc26a745a80d2b29ca5f13b583de02a2b746579a18ab07e2232b622cca37890b37d25c684d439552a4cb
   languageName: node
   linkType: hard
 
@@ -2251,15 +2246,6 @@ __metadata:
   version: 0.6.0
   resolution: "cookie@npm:0.6.0"
   checksum: 10c0/f2318b31af7a31b4ddb4a678d024514df5e705f9be5909a192d7f116cfb6d45cbacf96a473fa733faa95050e7cff26e7832bb3ef94751592f1387b71c8956686
-  languageName: node
-  linkType: hard
-
-"copy-anything@npm:^3.0.2":
-  version: 3.0.5
-  resolution: "copy-anything@npm:3.0.5"
-  dependencies:
-    is-what: "npm:^4.1.8"
-  checksum: 10c0/01eadd500c7e1db71d32d95a3bfaaedcb839ef891c741f6305ab0461398056133de08f2d1bf4c392b364e7bdb7ce498513896e137a7a183ac2516b065c28a4fe
   languageName: node
   linkType: hard
 
@@ -3528,13 +3514,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"is-what@npm:^4.1.8":
-  version: 4.1.16
-  resolution: "is-what@npm:4.1.16"
-  checksum: 10c0/611f1947776826dcf85b57cfb7bd3b3ea6f4b94a9c2f551d4a53f653cf0cb9d1e6518846648256d46ee6c91d114b6d09d2ac8a07306f7430c5900f87466aae5b
-  languageName: node
-  linkType: hard
-
 "isexe@npm:^2.0.0":
   version: 2.0.0
   resolution: "isexe@npm:2.0.0"
@@ -4760,13 +4739,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"remove-accents@npm:0.4.2":
-  version: 0.4.2
-  resolution: "remove-accents@npm:0.4.2"
-  checksum: 10c0/5cbc00efa52df29ce947a0c572ff975b011f5f197ebe7b4f6e527de26aba534cba12d502e3040b72e46ad01de3d4f2d5ef57a6593c964965e43ddb60438da0f8
-  languageName: node
-  linkType: hard
-
 "require-directory@npm:^2.1.1":
   version: 2.1.1
   resolution: "require-directory@npm:2.1.1"
@@ -5340,15 +5312,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"superjson@npm:^1.10.0":
-  version: 1.13.3
-  resolution: "superjson@npm:1.13.3"
-  dependencies:
-    copy-anything: "npm:^3.0.2"
-  checksum: 10c0/389a0a0c86884dd0558361af5d6d7f37102b71dda9595a665fe8b39d1ba0e57c859e39a9bd79b6f1fde6f4dcceac49a1c205f248d292744b2a340ee52846efdb
-  languageName: node
-  linkType: hard
-
 "supports-color@npm:^5.3.0":
   version: 5.5.0
   resolution: "supports-color@npm:5.5.0"
@@ -5630,15 +5593,6 @@ __metadata:
   languageName: node
   linkType: hard
 
-"use-sync-external-store@npm:^1.2.0":
-  version: 1.2.0
-  resolution: "use-sync-external-store@npm:1.2.0"
-  peerDependencies:
-    react: ^16.8.0 || ^17.0.0 || ^18.0.0
-  checksum: 10c0/ac4814e5592524f242921157e791b022efe36e451fe0d4fd4d204322d5433a4fc300d63b0ade5185f8e0735ded044c70bcf6d2352db0f74d097a238cebd2da02
-  languageName: node
-  linkType: hard
-
 "util-deprecate@npm:^1.0.2":
   version: 1.0.2
   resolution: "util-deprecate@npm:1.0.2"
@@ -5668,7 +5622,7 @@ __metadata:
     "@mui/material": "npm:^5.15.14"
     "@mui/styled-engine-sc": "npm:^6.0.0-alpha.18"
     "@tanstack/react-query": "npm:^5.28.6"
-    "@tanstack/react-query-devtools": "npm:4.29.5"
+    "@tanstack/react-query-devtools": "npm:^5.37.1"
     "@types/node": "npm:^20.11.29"
     "@types/react": "npm:^18.3.2"
     "@types/react-dom": "npm:^18.3.0"
