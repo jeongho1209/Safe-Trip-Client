@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Link } from 'react-router-dom';
+import { UseGetMyInfo } from '@apis/user';
 
 const Logo = styled.p`
     font-size: 36px;
@@ -32,6 +33,8 @@ const Wrapper = styled.header`
 `;
 
 const Header = () => {
+    const { data } = UseGetMyInfo();
+
     return (
         <Wrapper>
             <Logo>SafeTrip</Logo>
@@ -41,8 +44,7 @@ const Header = () => {
                 <Text>여행 정보 공유 글 작성</Text>
             </Link>
             <MyInfo>
-                <Text>jeongho1209님</Text>
-                {/* data 받아서 처리, page 이동 처리 필요*/}
+                <Text>{data?.accountId}님</Text>
             </MyInfo>
         </Wrapper>
     );
