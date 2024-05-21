@@ -24,9 +24,12 @@ Instance.interceptors.response.use(
     (response) => response,
     async (error: AxiosError<AxiosError>) => {
         if (axios.isAxiosError(error) && error.response) {
-            cookies.remove('access_token');
-            window.location.href = '/signIn';
+            if (error.response.data.message === 'Invalid Token' || error.response.data.message === 'Expired Token') {
+                cookies.remove('access_token');
+                window.location.href = '/signin';
+            }
+        } else {
+            throw error;
         }
-        throw error;
     },
 );
