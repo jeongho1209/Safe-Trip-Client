@@ -8,10 +8,30 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import Typography from '@mui/material/Typography';
 import { FormEvent } from 'react';
+import { UseSignIn } from '@apis/user';
+import { Cookies } from 'react-cookie';
+import { useNavigate } from 'react-router-dom';
+
+const cookies = new Cookies();
 
 export default function SignIn() {
+    const navigator = useNavigate();
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        const data = new FormData(event.currentTarget);
+
+        UseSignIn({
+            accountId: data.get('accountId') as string,
+            password: data.get('password') as string,
+        })
+            .then((response) => {
+                cookies.set('access_token', response.data.accessToken);
+                alert(`로그인에 성공하였습니다.`);
+                navigator('/main');
+            })
+            .catch(() => {
+                alert('로그인에 실패하였습니다.');
+            });
     };
 
     return (
@@ -69,7 +89,7 @@ export default function SignIn() {
                         </Button>
                         <Grid container>
                             <Grid item>
-                                <Link href="/src/pages/signUp" variant="body2">
+                                <Link href="/signup" variant="body2">
                                     회원가입하기
                                 </Link>
                             </Grid>

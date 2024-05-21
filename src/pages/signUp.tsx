@@ -1,9 +1,29 @@
 import { Avatar, Box, Button, Container, CssBaseline, Grid, Link, TextField, Typography } from '@mui/material';
 import { FormEvent } from 'react';
+import { UseSignUp } from '@apis/user';
+import { Cookies } from 'react-cookie';
+import { useNavigate } from 'react-router-dom';
+
+const cookies = new Cookies();
 
 export default function SignUp() {
+    const navigator = useNavigate();
     const handleSubmit = (event: FormEvent<HTMLFormElement>) => {
         event.preventDefault();
+        const data = new FormData(event.currentTarget);
+        UseSignUp({
+            accountId: data.get('accountId') as string,
+            password: data.get('password') as string,
+            age: data.get('age') as unknown as number,
+        })
+            .then((response) => {
+                cookies.set('access_token', response.data.accessToken);
+                alert(`회원가입에 성공하였습니다.`);
+                navigator('/main');
+            })
+            .catch(() => {
+                alert('회원가입에 실패하였습니다.');
+            });
     };
 
     return (
@@ -53,7 +73,7 @@ export default function SignUp() {
                     </Button>
                     <Grid container justifyContent="flex-end">
                         <Grid item>
-                            <Link href="/src/pages/signIn" variant="body2">
+                            <Link href="signin" variant="body2">
                                 로그인하기
                             </Link>
                         </Grid>
