@@ -5,6 +5,7 @@ import { TravelInfo } from '@pages/travelInfo.tsx';
 import SignUp from '@pages/signUp.tsx';
 import SignIn from '@pages/signIn.tsx';
 import { Review } from '@pages/review.tsx';
+import { MyPage } from '@pages/myPage.tsx';
 
 function App() {
     return (
@@ -16,6 +17,7 @@ function App() {
                     <Route path="/review" element={<Review />} />
                     <Route path="/signup" element={<SignUp />} />
                     <Route path="/signin" element={<SignIn />} />
+                    <Route path="/mypage" element={<MyPage />} />
                 </Routes>
             </BrowserRouter>
         </>

@@ -23,11 +23,11 @@ const MyInfo = styled.text`
 
 const Wrapper = styled.header`
     width: 100%;
-    height: 82px;
+    height: 80px;
     position: fixed;
     display: flex;
     align-items: center;
-    gap: 80px;
+    gap: 20px;
     background: white;
     z-index: 1;
 `;
@@ -39,9 +39,17 @@ const Header = () => {
         <Wrapper>
             <Logo>SafeTrip</Logo>
             <Text>국가 안전정보 검색</Text>
-            <Text>여행지 리뷰 작성</Text>
+            <Link to="/review" style={{ textDecoration: 'none', color: 'black' }}>
+                <Text>여행지 리뷰 작성</Text>
+            </Link>
             <Link to="/travelInfo" style={{ textDecoration: 'none', color: 'black' }}>
                 <Text>여행 정보 공유 글 작성</Text>
+            </Link>
+            <Link to="/main" style={{ textDecoration: 'none', color: 'black' }}>
+                <Text>메인페이지</Text>
+            </Link>
+            <Link to="/mypage" style={{ textDecoration: 'none', color: 'black' }}>
+                <Text>마이페이지</Text>
             </Link>
             <MyInfo>
                 <Text>{data?.accountId}님</Text>
