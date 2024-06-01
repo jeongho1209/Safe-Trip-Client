@@ -1,4 +1,4 @@
-import { ReviewText } from '@components/review/body/index.tsx';
+import { ReviewText } from '@components/review';
 import Header from '@components/header/index.tsx';
 
 export const Review = () => {
