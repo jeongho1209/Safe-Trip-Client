@@ -8,7 +8,7 @@ const SearchBox = styled.input`
     align-items: center;
     width: 850px;
     height: 70px;
-    background-color: white;
+    background-color: lightpink;
     margin-top: 70px;
     border: none;
     border-radius: 30px;
@@ -16,8 +16,10 @@ const SearchBox = styled.input`
     outline: none;
 `;
 
-const Search = () => {
+export const Search = () => {
     const [text, setText] = useState('');
+
+    // const debouncedQuery = UseDebounce(text, 1000);
 
     const onChangeText = (e: ChangeEvent<HTMLInputElement>) => {
         setText(e.target.value);
@@ -29,7 +31,9 @@ const Search = () => {
         }
     };
 
-    return <SearchBox value={text} onChange={onChangeText} onKeyDown={handleEnter}></SearchBox>;
+    return (
+        <>
+            <SearchBox value={text} onChange={onChangeText} onKeyDown={handleEnter}></SearchBox>
+        </>
+    );
 };
-
-export default Search;

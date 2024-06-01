@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import Search from '../../search';
+import { Search } from './search.tsx';
 
 const Text = styled.text`
     font-size: 50px;
@@ -15,19 +15,13 @@ const Wrapper = styled.div`
     height: 100vh;
 `;
 
-const Background = styled.div`
-    background-color: bisque;
-`;
-
 export const ReviewText = () => {
     return (
         <>
-            <Background>
-                <Wrapper>
-                    <Text>리뷰를 작성하고 다른 여행자에게 도움을 주세요!</Text>
-                    <Search></Search>
-                </Wrapper>
-            </Background>
+            <Wrapper>
+                <Text>리뷰를 작성하고 다른 여행자에게 도움을 주세요!</Text>
+                <Search></Search>
+            </Wrapper>
         </>
     );
 };
