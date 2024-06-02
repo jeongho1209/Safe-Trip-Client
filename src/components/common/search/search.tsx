@@ -6,6 +6,8 @@ import { UseCreateReview } from '@apis/review';
 import Swal from 'sweetalert2';
 import { SearchType } from '@components/common/search/type.ts';
 import { UseCreateTravelInfo } from '@apis/travel/info';
+import { ReviewInfo } from '@components/review/reviewInfo.tsx';
+import { TravelInfo } from '@components/travelInfo/travelInfo.tsx';
 
 export const Search = (searchType: SearchType) => {
     const [text, setText] = useState('');
@@ -138,6 +140,8 @@ export const Search = (searchType: SearchType) => {
                                     )}
                                 </ButtonContainer>
                                 <InfoText>{t.name}</InfoText>
+                                {searchType.isReview && <ReviewInfo travelDestinationId={t.id}></ReviewInfo>}
+                                {searchType.isTravel && <TravelInfo travelDestinationId={t.id}></TravelInfo>}
                             </MyContainer>
                         );
                     })}
