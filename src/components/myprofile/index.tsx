@@ -63,8 +63,22 @@ export const MyProfile = () => {
 
     const deleteReviewHandler = (travelDestinationId: number) => {
         UseDeleteReview(travelDestinationId)
-            .then(() => alert('리뷰 삭제 성공!'))
-            .catch(() => alert('리뷰 삭제 실패!'));
+            .then(() =>
+                Swal.fire({
+                    title: '성공!',
+                    text: '리뷰 삭제에 성공하였습니다.',
+                    icon: 'success',
+                    confirmButtonText: '확인',
+                }),
+            )
+            .catch(() =>
+                Swal.fire({
+                    title: '실패!',
+                    text: '리뷰 삭제에 실패하였습니다.',
+                    icon: 'error',
+                    confirmButtonText: '확인',
+                }),
+            );
     };
 
     return (
