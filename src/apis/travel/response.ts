@@ -8,3 +8,13 @@ export type TravelDestinationElement = {
     engName: string;
     code: string;
 };
+
+export type TravelInfoResponse = {
+    travelInfoList: TravelInfoElement[];
+};
+
+export type TravelInfoElement = {
+    id: number;
+    title: string;
+    content: string;
+};
