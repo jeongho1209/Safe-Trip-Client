@@ -1,4 +1,4 @@
-import Header from '@components/header/index.tsx';
+import { Header } from '@components/common/header';
 import { MainImage } from '@components/main/image/mainImage.tsx';
 import { MainText } from '@components/main/text/index.tsx';
 import styled from 'styled-components';

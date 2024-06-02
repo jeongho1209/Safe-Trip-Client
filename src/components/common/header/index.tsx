@@ -32,7 +32,7 @@ const Wrapper = styled.header`
     z-index: 1;
 `;
 
-const Header = () => {
+export const Header = () => {
     const { data } = UseGetMyInfo();
 
     return (
@@ -57,5 +57,3 @@ const Header = () => {
         </Wrapper>
     );
 };
-
-export default Header;
