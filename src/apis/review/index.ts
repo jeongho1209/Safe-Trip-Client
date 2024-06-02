@@ -7,10 +7,10 @@ export const UseCreateReview = (travelDestinationId: number, data: CreateReviewD
     return Instance.post(`${router}/${travelDestinationId}`, data);
 };
 
-export const UseUpdateReview = (travelDestinationId: number, data: UpdateReviewData) => {
-    return Instance.patch(`${router}/${travelDestinationId}`, data);
+export const UseUpdateReview = (reviewId: number, data: UpdateReviewData) => {
+    return Instance.patch(`${router}/${reviewId}`, data);
 };
 
-export const UseDeleteReview = (travelDestinationId: number) => {
-    return Instance.delete(`${router}/${travelDestinationId}`);
+export const UseDeleteReview = (reviewId: number) => {
+    return Instance.delete(`${router}/${reviewId}`);
 };

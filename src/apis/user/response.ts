@@ -7,13 +7,18 @@ export type UserResponseData = {
     accountId: string;
     age: number;
     reviewList: ReviewElement[];
+    travelInfoList: TravelInfoElement[];
 };
 
 export type ReviewElement = {
     id: number;
     title: string;
     content: string;
-    createdDate: string;
-    isMine: boolean;
-    accountId: string;
+};
+
+export type TravelInfoElement = {
+    id: number;
+    title: string;
+    content: string;
+    name: string;
 };
