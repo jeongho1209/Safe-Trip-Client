@@ -1,5 +1,5 @@
+import { Search } from '@components/common/search/search.tsx';
 import styled from 'styled-components';
-import { Search } from '../travelInfo/search.tsx';
 
 const Text = styled.text`
     font-size: 50px;
@@ -20,7 +20,7 @@ export const TravelInfoBody = () => {
         <>
             <Wrapper>
                 <Text>여행지에 대한 정보를 공유해보세요!</Text>
-                <Search></Search>
+                <Search isReview={false} isTravel={true}></Search>
             </Wrapper>
         </>
     );
