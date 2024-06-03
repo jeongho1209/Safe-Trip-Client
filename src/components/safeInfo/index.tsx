@@ -1,5 +1,5 @@
 import styled from 'styled-components';
-import { TravelDestinationSearch } from '../common/search/travelDestinationSearch.tsx';
+import { SafeInfoSearch } from '@components/common/search/safeInfoSearch.tsx';
 
 const Text = styled.text`
     font-size: 50px;
@@ -15,12 +15,12 @@ const Wrapper = styled.div`
     height: 100vh;
 `;
 
-export const ReviewText = () => {
+export const SafeInfoBody = () => {
     return (
         <>
             <Wrapper>
-                <Text>리뷰를 작성하고 다른 여행자에게 도움을 주세요!</Text>
-                <TravelDestinationSearch isReview={true} isTravel={false}></TravelDestinationSearch>
+                <Text>국가에 대한 안전 정보를 검색해보세요!</Text>
+                <SafeInfoSearch></SafeInfoSearch>
             </Wrapper>
         </>
     );

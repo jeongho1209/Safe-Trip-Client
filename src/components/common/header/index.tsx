@@ -38,7 +38,9 @@ export const Header = () => {
     return (
         <Wrapper>
             <Logo>SafeTrip</Logo>
-            <Text>국가 안전정보 검색</Text>
+            <Link to="/safeInfo" style={{ textDecoration: 'none', color: 'black' }}>
+                <Text>국가 안전정보 검색</Text>
+            </Link>
             <Link to="/review" style={{ textDecoration: 'none', color: 'black' }}>
                 <Text>여행지 리뷰 작성</Text>
             </Link>
