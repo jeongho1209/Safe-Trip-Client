@@ -9,7 +9,7 @@ import { UseCreateTravelInfo } from '@apis/travel/info';
 import { ReviewInfo } from '@components/review/reviewInfo.tsx';
 import { TravelInfo } from '@components/travelInfo/travelInfo.tsx';
 
-export const Search = (searchType: SearchType) => {
+export const TravelDestinationSearch = (searchType: SearchType) => {
     const [text, setText] = useState('');
 
     const debouncedQuery = UseDebounce(text, 500);
@@ -158,7 +158,7 @@ const SearchBox = styled.input`
     align-items: center;
     width: 850px;
     height: 70px;
-    background-color: lightpink;
+    background-color: lightskyblue;
     margin-top: 70px;
     border: none;
     border-radius: 30px;

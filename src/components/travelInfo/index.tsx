@@ -1,4 +1,4 @@
-import { Search } from '@components/common/search/search.tsx';
+import { TravelDestinationSearch } from '@components/common/search/travelDestinationSearch.tsx';
 import styled from 'styled-components';
 
 const Text = styled.text`
@@ -20,7 +20,7 @@ export const TravelInfoBody = () => {
         <>
             <Wrapper>
                 <Text>여행지에 대한 정보를 공유해보세요!</Text>
-                <Search isReview={false} isTravel={true}></Search>
+                <TravelDestinationSearch isReview={false} isTravel={true}></TravelDestinationSearch>
             </Wrapper>
         </>
     );
