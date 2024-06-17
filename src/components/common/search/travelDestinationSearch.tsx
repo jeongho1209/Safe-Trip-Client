@@ -140,6 +140,8 @@ export const TravelDestinationSearch = (searchType: SearchType) => {
                                     )}
                                 </ButtonContainer>
                                 <InfoText>{t.name}</InfoText>
+                                <br />
+                                <InfoText>code : {t.code}</InfoText>
                                 {searchType.isReview && <ReviewInfo travelDestinationId={t.id}></ReviewInfo>}
                                 {searchType.isTravel && <TravelInfo travelDestinationId={t.id}></TravelInfo>}
                             </MyContainer>
